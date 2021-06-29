@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @interface BMW : Car
-- (void)run;
+- (void)showspeed;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -19,7 +19,7 @@
     Car *car = [Car new];
     BMW *bmw = [BMW new];
     [car run];
-    [bmw run];
+    [bmw showspeed];
 }
 
 

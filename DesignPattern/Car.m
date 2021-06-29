@@ -14,8 +14,7 @@
 @end
 
 @implementation BMW
-- (void)run {
-    [super run];
+- (void)showspeed {
     NSLog(@"BMW时速：80km/h");
 }
 
