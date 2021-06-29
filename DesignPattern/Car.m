@@ -17,19 +17,37 @@
 @implementation gasoline90
 
 @synthesize name = _name;
+@synthesize goodQuality = _goodQuality;
 - (NSString *)name {
     _name = @"90号";
     return _name;
 }
-
+- (BOOL)goodQuality {
+    _goodQuality = YES;
+    return _goodQuality;
+}
 @end
 
 @implementation gasoline93
 
 @synthesize name = _name;
+@synthesize goodQuality = _goodQuality;
 - (NSString *)name {
     _name = @"93号";
     return _name;
+}
+- (BOOL)goodQuality {
+    _goodQuality = NO;
+    return _goodQuality;
+}
+@end
+
+@implementation Customer
+
+- (void)refuel:(id<IGasoline>)gaso {
+    if (gaso.goodQuality == YES) {
+        [self.car refuel:gaso];
+    }
 }
 
 @end

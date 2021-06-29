@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol IGasoline <NSObject>
 @property (nonatomic, copy) NSString *name;
+@property (nonatomic, assign) BOOL goodQuality;
 @end
 
 @interface Car : NSObject
@@ -25,6 +26,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface gasoline93 : NSObject <IGasoline>
 
+@end
+
+@class Car;
+
+@interface Customer : NSObject
+@property (nonatomic, strong) Car *car;
+- (void)refuel:(id<IGasoline>)gaso;
 @end
 
 NS_ASSUME_NONNULL_END

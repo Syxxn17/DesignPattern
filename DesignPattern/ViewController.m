@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "Car.h"
 
 @interface ViewController ()
 
@@ -15,7 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    Car *car = [Car new];
+    Customer *sy = [Customer new];
+    gasoline90 *gaso = [gasoline90 new];
+    sy.car = car;
+    [sy refuel:gaso];
 }
 
 
