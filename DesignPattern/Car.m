@@ -44,9 +44,17 @@
 
 @implementation Customer
 
-- (void)refuel:(id<IGasoline>)gaso {
-    if (gaso.goodQuality == YES) {
-        [self.car refuel:gaso];
+- (void)refuelWithGaso:(id<IGasoline>)gaso staff:(Staff *)staff {
+    [staff refuelWithCar:self.car gaso:gaso];
+}
+
+@end
+
+@implementation Staff
+
+- (void)refuelWithCar:(Car *)car gaso:(id<IGasoline>)gaso {
+    if (gaso.goodQuality) {
+        [car refuel:gaso];
     }
 }
 

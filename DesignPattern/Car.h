@@ -29,10 +29,15 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @class Car;
+@class Staff;
 
 @interface Customer : NSObject
 @property (nonatomic, strong) Car *car;
-- (void)refuel:(id<IGasoline>)gaso;
+- (void)refuelWithGaso:(id<IGasoline>)gaso staff:(Staff *)staff;
+@end
+
+@interface Staff : NSObject
+- (void)refuelWithCar:(Car *)car gaso:(id<IGasoline>)gaso;
 @end
 
 NS_ASSUME_NONNULL_END

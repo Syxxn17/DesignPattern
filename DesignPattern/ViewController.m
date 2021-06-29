@@ -18,9 +18,10 @@
     [super viewDidLoad];
     Car *car = [Car new];
     Customer *sy = [Customer new];
-    gasoline90 *gaso = [gasoline90 new];
+    Staff *ww = [Staff new];
+    gasoline93 *gaso = [gasoline93 new];
     sy.car = car;
-    [sy refuel:gaso];
+    [sy refuelWithGaso:gaso staff:ww];
 }
 
 
