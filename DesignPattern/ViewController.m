@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "PayHelper.h"
 
 @interface ViewController ()
 
@@ -15,7 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    PaySendModel *model = [[PaySendModel alloc] init];
+    AliPay *ali = [[AliPay alloc] init];
+    model = [ali handle];
+    PayHelper *helper = [[PayHelper alloc] init];
+    [helper pay:model];
 }
 
 
