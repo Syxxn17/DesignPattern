@@ -14,6 +14,7 @@
 		3A2B99BC268AC4DB00772FE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A2B99BB268AC4DB00772FE8 /* Assets.xcassets */; };
 		3A2B99BF268AC4DB00772FE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2B99BD268AC4DB00772FE8 /* LaunchScreen.storyboard */; };
 		3A2B99C2268AC4DB00772FE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B99C1268AC4DB00772FE8 /* main.m */; };
+		3A2B99D6268B08D500772FE8 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A2B99D5268B08D500772FE8 /* Car.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		3A2B99BE268AC4DB00772FE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A2B99C0268AC4DB00772FE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A2B99C1268AC4DB00772FE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3A2B99D4268B08D400772FE8 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		3A2B99D5268B08D500772FE8 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,8 @@
 				3A2B99BD268AC4DB00772FE8 /* LaunchScreen.storyboard */,
 				3A2B99C0268AC4DB00772FE8 /* Info.plist */,
 				3A2B99C1268AC4DB00772FE8 /* main.m */,
+				3A2B99D4268B08D400772FE8 /* Car.h */,
+				3A2B99D5268B08D500772FE8 /* Car.m */,
 			);
 			path = DesignPattern;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A2B99D6268B08D500772FE8 /* Car.m in Sources */,
 				3A2B99B7268AC4D900772FE8 /* ViewController.m in Sources */,
 				3A2B99B1268AC4D900772FE8 /* AppDelegate.m in Sources */,
 				3A2B99C2268AC4DB00772FE8 /* main.m in Sources */,
